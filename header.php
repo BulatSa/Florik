@@ -12,7 +12,7 @@
 	<![endif]-->
 
 
-	<title>Шаблон проекта</title>
+	<title>Флоринский</title>
 
 	<!-- favocons -->
 	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">

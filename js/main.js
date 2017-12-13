@@ -82,6 +82,50 @@ Input mask END
 
 
 /***********************
+GreenSock BEGIN
+***********************/
+$(document).ready(function() {
+	if($(window).width() > 1030) {
+		var $headerLogo = $('.header-nav__logo');
+		var $headerLinks = $('.header-nav__links a');
+		var $headerContact = $('.header-nav__contact');
+		var $headerTitle = $('.header__title');
+		var $headerDescr = $('.header__descr');
+		var $headerBtn = $('.header__info .btn');
+
+		var tlHeader = new TimelineMax();
+		tlHeader
+			.fromTo($headerLogo, 1, {y:-100, opacity: 0}, {y: 0, opacity: 1})
+			.staggerFromTo($headerLinks, 0.5, {opacity:0}, {opacity: 1}, 0.03)
+			.fromTo($headerContact, 1, {opacity:0}, {opacity: 1})
+			.fromTo($headerTitle, 0.5, {x: 60, opacity:0}, {x: 0, opacity: 1})
+			.fromTo($headerDescr, 0.5, {x: 60, opacity:0}, {x: 0, opacity: 1})
+			.fromTo($headerBtn, 0.5, {y: 30, opacity:0}, {y: 0, opacity: 1});
+	}
+
+});
+/***********************
+GreenSock END
+***********************/
+
+
+/***********************
+Clients Open BEGIN
+***********************/
+$(document).ready(function() {
+	var $clientsListMore = $('.clients__list-more-wrap');
+	$('.clients__title-link').on('click',function(e) {
+		e.preventDefault();
+		$clientsListMore.slideToggle('300');
+		$(this).toggleClass('opened');
+	});
+});
+/***********************
+Clients Open END
+***********************/
+
+
+/***********************
  fancybox BEGIN
  ***********************/
 function init_fancy() {

@@ -37,6 +37,14 @@
 	position: relative;
 	padding-left: 16px;
 	padding-right: 16px;
+	@include res(l) {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	@include res(s) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 .row{
@@ -44,10 +52,26 @@
 	flex-wrap: wrap;
 	margin-left: -$gutter;
 	margin-right: -$gutter;
+	@include res(l) {
+		margin-left: -$gutter-tablet;
+		margin-right: -$gutter-tablet;
+	}
+	@include res(s) {
+		margin-left: -$gutter-mobile;
+		margin-right: -$gutter-mobile;
+	}
 
 	[class^="grid"]{
 		padding-left: $gutter;
 		padding-right: $gutter;
+		@include res(l) {
+			padding-left: $gutter-tablet;
+			padding-right: $gutter-tablet;
+		}
+		@include res(s) {
+			padding-left: $gutter-mobile;
+			padding-right: $gutter-mobile;
+		}
 	}
 
 	&--center {
@@ -78,4 +102,9 @@
 .img-responsive{
 	width: 100%;
 	height: auto;
+}
+
+.def-sec {
+	padding-top: $pad-l;
+	padding-bottom: $pad-l;
 }
