@@ -11,7 +11,7 @@
 	font-family: $font;
 	cursor: pointer;
 	user-select: none;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 35px;
 	transition: all 0.3s ease;
 	background-color: #fff;
@@ -26,7 +26,15 @@
 		outline: none;
 	}
 	&:hover {
+		border-color: $link-hover;
+		color: $link-hover;
+	}
+	&--trans {
 		border-color: #000;
+		background: transparent;
+	}
+	&--red {
+		border-color: $red;
 	}
 }
 

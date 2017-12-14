@@ -1,0 +1,63 @@
+.certs-sec {}
+
+.certs {}
+
+.certs__block {
+	@include res(s) {
+		margin-bottom: $pad-xxs;
+	}
+	span {
+		display: block;
+		width: 100%;
+		margin-bottom: $pad-s;
+		font-size: 20px;
+		font-family: $font-head;
+		font-weight: 600;
+		@include res(l) {
+			margin-bottom: $pad-xs;
+		}
+		@include res(s) {
+			margin-bottom: $pad-xxs;
+			font-size: 18px;
+		}
+	}
+
+}
+
+.certs__block-imgs {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-right: -$gutter;
+	margin-left: -$gutter;
+	@include res(l) {
+		margin-left: -$gutter-tablet;
+		margin-right: -$gutter-tablet;
+	}
+	@include res(s) {
+		margin-left: -$gutter-mobile;
+		margin-right: -$gutter-mobile;
+	}
+	img {
+		display: block;
+		max-width: calc(25% - #{$gutter + $gutter});
+		margin-bottom: 20px;
+		margin-left: $gutter;
+		margin-right: $gutter;
+		flex-shrink: 0;
+		@include res(l) {
+			max-width: calc(25% - #{$gutter-tablet + $gutter-tablet});
+			margin-left: $gutter-tablet;
+			margin-right: $gutter-tablet;
+		}
+		@include res(s) {
+			max-width: calc(25% - #{$gutter-mobile + $gutter-mobile});
+			margin-left: $gutter-mobile;
+			margin-right: $gutter-mobile;
+		}
+		@include res(xs) {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+}

@@ -35,15 +35,15 @@
 	width: 100%;
 	max-width: $container_width;
 	position: relative;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: $gutter;
+	padding-right: $gutter;
 	@include res(l) {
-		padding-left: 14px;
-		padding-right: 14px;
+		padding-left: $gutter-tablet;
+		padding-right: $gutter-tablet;
 	}
 	@include res(s) {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: $gutter-mobile;
+		padding-right: $gutter-mobile;
 	}
 }
 
@@ -107,4 +107,20 @@
 .def-sec {
 	padding-top: $pad-l;
 	padding-bottom: $pad-l;
+	@include res(xl) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include res(l) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
+	}
+	@include res(xs) {
+		//padding-top: $pad-xs;
+		//padding-bottom: $pad-xs;
+	}
 }

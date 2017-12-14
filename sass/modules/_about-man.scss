@@ -1,0 +1,146 @@
+.about-man-sec {
+	background: url('../img/about-man/bg-about-man.jpg') no-repeat top center;
+	@include res(m) {
+		background-position: 55% 0%;
+	}
+	@include res(s) {
+		background: url('../img/about-man/bg-about-man-mobile.jpg') no-repeat top center;
+	}
+}
+
+.about-man {}
+
+.about-man__info {
+	max-width: 680px;
+	@include res(m) {
+		max-width: 540px;
+	}
+}
+
+.about-man__medals {
+	display: flex;
+	align-items: flex-start;
+	padding-top: $pad-l;
+	@include res(l) {
+		padding-top: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+	}
+	@include res(xs) {
+		padding-top: $pad-xs;
+	}
+}
+
+.about-man__medal {
+	padding-right: 30px;
+	&:last-child {
+		padding-right: 0;
+	}
+	@include res(s) {
+		padding-right: 20px;
+	}
+	span {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 14px;
+		font-family: $font-head;
+		font-weight: 600;
+		line-height: 1.2;
+		@include res(s) {
+			font-size: 12px;
+		}
+		@include res(xs) {
+			font-size: 10px;
+		}
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+.about-man__contact {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: $pad-m;
+	@include res(s) {
+		padding-top: $pad-s;
+	}
+	@include res(xs) {
+		padding-top: $pad-xs;
+	}
+	span {
+		display: block;
+		width: 100%;
+		padding-bottom: $pad-xxs;
+		font-family: $font-head;
+		font-weight: 600;
+		font-size: 18px;
+		@include res(l) {
+			font-size: 16px;
+		}
+	}
+}
+
+.about-man__contact-soc {
+	display: flex;
+	align-items: center;
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+		border: 2px solid #000;
+		border-radius: 50%;
+		transition: all 0.3s ease;
+		@include res(l) {
+			width: 50px;
+			height: 50px;
+			margin-right: 15px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			border-color: $link-hover;
+			i {
+				color: $link-hover;
+			}
+		}
+		i {
+			transition: all 0.3s ease;
+		}
+		.i-soc-vk {
+			font-size: 20px;
+			@include res(l) {
+				font-size: 16px;
+			}
+		}
+		.i-soc-fb {
+			font-size: 27px;
+			@include res(l) {
+				font-size: 21px;
+			}
+		}
+		.i-soc-insta {
+			font-size: 24px;
+			@include res(l) {
+				font-size: 20px;
+			}
+		}
+		.i-soc-you {
+			font-size: 28px;
+			@include res(l) {
+				font-size: 22px;
+			}
+		}
+	}
+}

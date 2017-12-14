@@ -37,6 +37,7 @@ h2, .h2 {
 	font-family: $font-head;
 	font-size: 40px;
 	font-weight: 600;
+	line-height: 1.1;
 	@include res(xl) {
 		font-size: 38px;
 	}
@@ -58,6 +59,7 @@ h3, .h3 {
 	font-family: $font-head;
 	font-size: 30px;
 	font-weight: 600;
+	line-height: 1.1;
 	@include res(xl) {
 		font-size: 28px;
 	}
@@ -76,11 +78,38 @@ h4, .h4 {
 	font-family: $font-head;
 	font-size: 20px;
 	font-weight: 600;
+	line-height: 1.1;
+}
+
+.user-content {
+	font-size: 16px;
+	line-height: 1.4;
+	p {
+		margin-bottom: 1em;
+		font-size: 16px;
+		line-height: 1.4;
+		@include res(s) {
+			margin-bottom: 0.8em;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .block-title {
+	padding-bottom: $pad-m;
 	font-family: $font-head;
 	font-weight: 600;
+	@include res(l) {
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+	@include res(xs) {
+		padding-bottom: $pad-xxs;
+	}
 	span {
 		display: block;
 		padding-bottom: 5px;
