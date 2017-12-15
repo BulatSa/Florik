@@ -1,0 +1,28 @@
+.video-block-sec {
+	background: url("../img/bg-header.jpg") no-repeat center center;
+}
+
+.video-block {
+	display: flex;
+	align-items: center;
+	min-height: 820px;
+	@include res(l) {
+		min-height: 480px;
+	}
+	@include res(s) {
+		min-height: initial;
+	}
+}
+
+.video-block__info {
+	color: #fff;
+}
+
+.video-block__info-text {
+	max-width: 820px;
+	.btn {
+		@include res(s) {
+			margin-top: $pad-xs;
+		}
+	}
+}

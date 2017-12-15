@@ -152,33 +152,154 @@
 			<span>Услуги</span>
 			<p class="h1">Мои 4 основных направления</p>
 		</div>
-		<div class="services__item">
+		<div class="services__item anim">
 			<div class="row">
-				<div class="grid-6">
-					<div class="services__img"></div>
+				<div class="grid-6 grid-12_s">
+					<div class="services__img services__img--1">
+						<img src="" data-src="img/services/service-1-top.png" class="services__img-top" alt="">
+						<img src="" data-src="img/services/service-1-bottom.jpg" class="services__img-bottom" alt="">
+						<img src="" class="services__img-mobile" data-src-mobile="img/services/service-1-mobile.jpg" alt="">
+					</div>
 				</div>
 				<div class="grid-6 grid-12_s">
 					<div class="services__info">
 						<div class="services__title">
 							<img class="services__title-img" src="img/services/block-title-1.svg" alt="">
 							<p class="h3">Упаковка продуктов и услуг</p>
-							<div class="user-content">
-								<p>Как  вывести продукт на рынок? Я найду для вас УТП (критические и вторичные  факторы успеха), придумаю инновацию для рынка или создам маркет-микс.</p>
-								<p>На  выходе вы получите упакованные материалы для рекламы, маркетинговые  офферы, креативы, посадочные страницы и сайты, которую дают конверсию в  целевое действие.</p>
-								<p>Уже есть опыт продвижения с нуля  стабилизированных цветов, розы в колбе, множество франшиз, детских  товаров, развлекательных центров и многого другого.</p>
-							</div>
-							<div class="services__targets">
-								<span>Разработка лендингов</span>
-								<span>А/B тестирование</span>
-								<span>Фото- и видеосессия</span>
-								<span>Создание сайтов</span>
-								<span>Стратегии бренда</span>
-								<span>Брендинг</span>
-							</div>
-							<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
 						</div>
+						<div class="user-content">
+							<p>Как  вывести продукт на рынок? Я найду для вас УТП (критические и вторичные  факторы успеха), придумаю инновацию для рынка или создам маркет-микс.</p>
+							<p>На  выходе вы получите упакованные материалы для рекламы, маркетинговые  офферы, креативы, посадочные страницы и сайты, которую дают конверсию в  целевое действие.</p>
+							<p>Уже есть опыт продвижения с нуля  стабилизированных цветов, розы в колбе, множество франшиз, детских  товаров, развлекательных центров и многого другого.</p>
+						</div>
+						<div class="services__targets">
+							<span>Разработка лендингов</span>
+							<span>А/B тестирование</span>
+							<span>Фото- и видеосессия</span>
+							<span>Создание сайтов</span>
+							<span>Стратегии бренда</span>
+							<span>Брендинг</span>
+						</div>
+						<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="services__item anim">
+			<div class="row">
+				<div class="grid-6 grid-12_s">
+					<div class="services__img services__img--2">
+						<img src="" data-src="img/services/service-2-top.png" class="services__img-top" alt="">
+						<img src="" data-src="img/services/service-2-bottom.jpg" class="services__img-bottom" alt="">
+						<img src="" class="services__img-mobile" data-src-mobile="img/services/service-2-mobile.jpg" alt="">
+					</div>
+				</div>
+				<div class="grid-6 grid-12_s">
+					<div class="services__info">
+						<div class="services__title">
+							<img class="services__title-img" src="img/services/block-title-2.svg" alt="">
+							<p class="h3">Продажи и CRM</p>
+						</div>
+						<div class="user-content">
+							<p>У  вас нет отдела продаж? Или действующий отдел продаж буксует? За 3-6  месяцев я внедрю и оптимизиую вашу CRM систему, создам регламенты и  инструкции, найму людей, обучу их и запущу цепочки продаж. Если у вас  уже есть отдел продаж - я смогу проанализировать его результаты, найти  слабые точки, исправить и отладить все процессы, найти новые каналы  продаж.</p>
+							<p>Среди успешных реализованных проектов множество  производственных компаний, ритейл, розничные точки продаж, оптовые  отделы продаж, инфобизнесы и другие.</p>
+						</div>
+						<div class="services__targets">
+							<span>Тренинги для отделов продаж</span>
+							<span>Скрипты-продаж</span>
+							<span>Систематизация работы</span>
+							<span>HR-сотрудников</span>
+						</div>
+						<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="services__item anim">
+			<div class="row">
+				<div class="grid-6 grid-12_s">
+					<div class="services__img services__img--3">
+						<img src="" data-src="img/services/service-3-top.png" class="services__img-top" alt="">
+						<img src="" data-src="img/services/service-3-bottom.jpg" class="services__img-bottom" alt="">
+						<img src="" class="services__img-mobile" data-src-mobile="img/services/service-3-mobile.jpg" alt="">
+					</div>
+				</div>
+				<div class="grid-6 grid-12_s">
+					<div class="services__info">
+						<div class="services__title">
+							<img class="services__title-img" src="img/services/block-title-3.svg" alt="">
+							<p class="h3">Маркетинг и лидогенерация</p>
+						</div>
+						<div class="user-content">
+							<p>Вы  готовы к продажам и есть продукт? Нужен поток заявок? Сделаем! К вашим  услугам полный спектр рекламы: контекстная, таргтированная, медийная,  посевы. Со мной работают лучшие агентства и профессионалы из России и  СНГ. Мы привлекаем 350 платных регистраий на мероприятие за 1 неделю,  собираем за месяц свыше 15 000 регистраций на бесплатное событие,  продаём свыше 150 обучающих курсов стоимость свыше 100 000 рублей в  месяц.</p>
+						</div>
+						<div class="services__targets">
+							<span>новые каналы привлечения трафика</span>
+							<span>Контекстная реклама</span>
+							<span>Работа с лидерами мнений</span>
+							<span>аналитика</span>
+							<span>Таргетированная реклама</span>
+							<span>Посевы</span>
+							<span>оптимизация каналов</span>
+							<span>smm</span>
+							<span>Контекстная реклама</span>
+						</div>
+						<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="services__item anim">
+			<div class="row">
+				<div class="grid-6 grid-12_s">
+					<div class="services__img services__img--4">
+						<img src="" data-src="img/services/service-4-top.png" class="services__img-top" alt="">
+						<img src="" data-src="img/services/service-4-bottom.jpg" class="services__img-bottom" alt="">
+						<img src="" class="services__img-mobile" data-src-mobile="img/services/service-4-mobile.jpg" alt="">
+					</div>
+				</div>
+				<div class="grid-6 grid-12_s">
+					<div class="services__info">
+						<div class="services__title">
+							<img class="services__title-img" src="img/services/block-title-4.svg" alt="">
+							<p class="h3">Бизнес–процессы</p>
+						</div>
+						<div class="user-content">
+							<p>Вы закопались в текучке?  Один департамент не понимает, что делает другой? Хочется  стабилизировать ситуацию в компании? Я могу создать для вас систему  управления проектами по собственной методологии, обучить всех  руководитель, научить эффективно добиваться целей и понимать: что  является важным для реализации, а что может подождать. Иногда  руководитель должен уметь говорить "Нет" и управлять процессами. </p>
+							<p>Я помогу вам создать регламенты и инструкции, чтобы ваш бизнес мог масштабироваться.</p>
+						</div>
+						<div class="services__targets">
+							<span>Создание бизнес-планов</span>
+							<span>Управление проектами</span>
+							<span>Обучение руководителей</span>
+							<span>Управленческий учет</span>
+							<span>Консолидация данных</span>
+							<span>Прогнозирование</span>
+							<span>Создание регламентов</span>
+						</div>
+						<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="video-block-sec def-sec">
+	<div class="video-block container">
+		<div class="video-block__info">
+			<div class="video-block__info-text">
+				<div class="block-title">
+					<p class="h1">Увеличиваю обороты бизнеса минимум в&nbsp;2&nbsp;раза</p>
+					<div class="user-content">
+						<p>Оставьте заявку и я свяжусь с вами, проведу брифинг и после вышлю коммерческое предложение по увеличению оборота вашего бизнеса.</p>
+					</div>
+				</div>
+				<a href="#" class="btn fancy" data-src="#modal-order">Оставить заявку</a>
 			</div>
 		</div>
 	</div>

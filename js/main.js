@@ -126,6 +126,70 @@ Clients Open END
 
 
 /***********************
+Services Tracking BEGIN
+***********************/
+$(document).ready(function() {
+	// This Hack for Safari :(
+	function servicesAutoHeight() {
+		var $servicesItem = $('.services__item');
+		$servicesItem.each(function (indx, el) {
+			$(el).find('.services__img').innerHeight($(el).find('.services__info').innerHeight());
+		})
+	};
+
+	if(!device.mobile()) {
+		servicesAutoHeight();
+		$(window).resize(function () {
+			servicesAutoHeight();
+		});
+	}
+
+
+
+});
+/***********************
+Services Tracking END
+***********************/
+
+
+/***********************
+Replace Src Image BEGIN
+***********************/
+$(document).ready(function() {
+	function replaceSrcImg(){
+		var $img = $('img');
+		$img.each(function (indx, el) {
+			$(el).attr('src', $(el).data('src'));
+		})
+	};
+
+	function replaceSrcImgMobile(){
+		var $img = $('img');
+		$img.each(function (indx, el) {
+			$(el).attr('src', $(el).data('src-mobile'));
+		})
+	};
+
+	if(!device.mobile()) {
+		replaceSrcImg();
+	} else {
+		replaceSrcImgMobile();
+	}
+
+	$(window).resize(function () {
+		if(!device.mobile()) {
+			replaceSrcImg();
+		} else {
+			replaceSrcImgMobile();
+		}
+	});
+});
+/***********************
+Replace Src Image END
+***********************/
+
+
+/***********************
  fancybox BEGIN
  ***********************/
 function init_fancy() {
