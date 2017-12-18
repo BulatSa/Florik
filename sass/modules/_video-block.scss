@@ -5,7 +5,10 @@
 .video-block {
 	display: flex;
 	align-items: center;
-	min-height: 820px;
+	min-height: 800px;
+	@include res(xl) {
+		min-height: 600px;
+	}
 	@include res(l) {
 		min-height: 480px;
 	}
@@ -24,5 +27,61 @@
 		@include res(s) {
 			margin-top: $pad-xs;
 		}
+	}
+}
+
+.video-block__info-facts {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-top: $pad-m;
+	padding-bottom: $pad-xl;
+	@include res(xl) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-m;
+	}
+	@include res(l) {
+		flex-wrap: wrap;
+		padding-bottom: $pad-xs;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xxs;
+	}
+}
+
+.video-block__info-fact {
+	width: calc(100%/8);
+	padding-right: 3%;
+	@include res(l) {
+		width: calc(100%/4);
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-right: 20px;
+	}
+	@include res(xs) {
+		width: calc(100%/3);
+	}
+	span {
+		display: block;
+		min-height: 2.4em;
+		margin-bottom: 12px;
+		font-size: 14px;
+		font-family: $font-head;
+		font-weight: 600;
+		line-height: 1.2;
+		@include res(xl) {
+			font-size: 13px;
+		}
+		@include res(s) {
+			font-size: 12px;
+		}
+		@include res(xxs) {
+			min-height: 3.6em;
+		}
+	}
+	img {
+		display: block;
+		max-width: 100%;
 	}
 }

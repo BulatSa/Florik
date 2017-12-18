@@ -3,6 +3,7 @@
 @import 'helpers/placeholders';
 
 @import 'vendors/fancybox';
+@import 'vendors/slick';
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -20,5 +21,7 @@
 @import 'modules/certs';
 @import 'modules/services';
 @import 'modules/video-block';
+@import 'modules/cases';
+@import 'modules/prices';
 
 @import 'pages/home';

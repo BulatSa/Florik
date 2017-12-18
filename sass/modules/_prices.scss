@@ -1,0 +1,73 @@
+.prices-sec {
+	background: url('../img/bg-prices.jpg') no-repeat bottom center;
+}
+
+.prices {}
+
+.prices__list {
+	display: flex;
+	align-items: flex-start;
+}
+
+.prices__item {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: $pad-m;
+	padding-bottom: $pad-s;
+	box-shadow: 0 15px 25px transparentize(#213148, 1);
+	background: transparent;
+	transition: all 0.3s ease;
+	@include res(l) {
+		padding-top: $pad-s;
+		padding-left: $pad-xs;
+		padding-right: $pad-xs;
+		box-shadow: 0 10px 30px transparentize(#213148, 0.85);
+		background: #fff;
+	}
+	@include res(m) {
+		margin-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-top: $pad-xs;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&:hover {
+		box-shadow: 0 10px 30px transparentize(#213148, 0.85);
+		background: #fff;
+		.prices__item-more {
+			opacity: 1;
+		}
+	}
+	&--last {
+		margin-bottom: 0;
+	}
+}
+
+.prices__item-more {
+	padding-top: $pad-xs;
+	opacity: 0;
+	transition: all 0.3s ease;
+	@include res(l) {
+		opacity: 1;
+	}
+	.btn {
+		margin-top: $pad-xs;
+	}
+}
+
+.prices__item-more-text {
+	padding-top: $pad-xxs;
+	padding-bottom: $pad-xxs;
+	border-top: 2px dotted #b1b1b1;
+	border-bottom: 2px dotted #b1b1b1;
+	p {
+		margin-bottom: 5px;
+		font-size: 18px;
+		font-family: $font-head;
+		font-weight: 600;
+		@include res(l) {
+			font-size: 16px;
+		}
+	}
+}

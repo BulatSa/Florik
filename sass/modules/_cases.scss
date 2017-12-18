@@ -1,0 +1,239 @@
+.cases-sec {}
+
+.cases {}
+
+.cases__slider {}
+
+.cases__slide-wrap {
+	outline: none;
+	&.slick-active {
+		.cases__slide-logo {
+			opacity: 1;
+			transition: all 1s ease 0.3s;
+		}
+		.cases__slide-info .user-content h2 {
+			opacity: 1;
+			transition: transform 0.7s ease-out 0.5s, opacity 0.8s ease-in 0.6s;
+			transform: translate3d(0,0,0);
+		}
+		.cases__slide-info .user-content p {
+			opacity: 1;
+			transition: transform 0.7s ease-out 0.7s, opacity 0.8s ease-in 0.6s;
+			transform: translate3d(0,0,0);
+		}
+		.cases__slide-profit .cases__slide-profit-before {
+			opacity: 1;
+			transition: all 0.7s ease 1s;
+			transform: translate3d(0,0,0);
+		}
+		.cases__slide-profit .cases__slide-profit-after {
+			opacity: 1;
+			transition: all 0.7s ease 1.2s;
+			transform: translate3d(0,0,0);
+		}
+		.cases__slide-img {
+			opacity: 1;
+			transition: all 0.7s ease 0.8s;
+			transform: translate3d(0,0,0) scale(1);
+		}
+	}
+}
+
+.cases__slide {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.cases__slide-info {
+	width: 50%;
+	padding-right: $pad-m;
+	padding-left: $pad-xl;
+	@include res(xl) {
+		padding-right: $pad-m;
+		padding-left: $pad-l;
+	}
+	@include res(l) {
+		padding-right: $pad-s;
+		padding-left: $pad-m;
+	}
+	@include res(s) {
+		width: 100%;
+		padding-top: $pad-xs;
+		padding-right: $pad-xs;
+		padding-left: $pad-xs;
+	}
+	img {
+		margin-bottom: $pad-xs;
+	}
+	.user-content {
+		max-width: 440px;
+		h2 {
+			opacity: 0;
+			transform: translate3d(80px,0,0);
+		}
+		p {
+			opacity: 0;
+			transform: translate3d(80px,0,0);
+		}
+	}
+}
+
+.cases__slide-logo {
+	display: block;
+	opacity: 0;
+}
+
+.cases__slide-profit {
+	max-width: 440px;
+	display: flex;
+	align-items: flex-start;
+	padding-top: $pad-s;
+	@include res(s) {
+		padding-top: $pad-xs;
+	}
+	div {
+		width: 50%;
+		padding-right: 10%;
+	}
+	span {
+		text-transform: uppercase;
+		font-size: 14px;
+		font-family: $font-head;
+		font-weight: bold;
+	}
+	p {
+		font-size: 14px;
+	}
+}
+
+.cases__slide-profit-before {
+	opacity: 0;
+	transform: translate3d(0,20px,0);
+}
+
+.cases__slide-profit-after {
+	opacity: 0;
+	transform: translate3d(0,20px,0);
+}
+
+.cases__slide-img {
+	width: 50%;
+	padding-right: $pad-xl;
+	padding-left: 0;
+	opacity: 0;
+	transform: translate3d(0,0,0) scale(0.95);
+	@include res(xl) {
+		padding-right: $pad-l;
+		padding-left: 0;
+	}
+	@include res(l) {
+		padding-right: $pad-m;
+		padding-left: 0;
+	}
+	@include res(s) {
+		width: 100%;
+		padding-top: $pad-xs;
+		padding-right: $pad-xs;
+		padding-left: $pad-xs;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		@include res(s) {
+			width: 100%;
+			max-width: 340px;
+		}
+	}
+}
+
+.cases__slide-next {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 100%;
+	z-index: 5;
+	@include res(s) {
+		right: -10px;
+		width: 30px;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 5px;
+		width: 25px;
+		height: 25px;
+		border-right: 2px solid #000;
+		border-bottom: 2px solid #000;
+		border-radius: 0 1px 2px 1px;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%,0,0) rotate(-45deg);
+		z-index: 5;
+		@include res(s) {
+			width: 15px;
+			height: 15px;
+			right: 5px;
+			top: 25%;
+		}
+	}
+	&:hover {
+		&:after {
+			border-color: $link-hover;
+		}
+	}
+	&.slick-disabled {
+		pointer-events: none;
+		&:after {
+			opacity: 0.3;
+		}
+	}
+}
+
+.cases__slide-prev {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 45px;
+	height: 100%;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 25px;
+		width: 25px;
+		height: 25px;
+		border-left: 2px solid #000;
+		border-bottom: 2px solid #000;
+		border-radius: 1px 0 1px 2px;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%,0,0) rotate(45deg);
+		z-index: 5;
+		@include res(s) {
+			width: 15px;
+			height: 15px;
+			left: 20px;
+			top: 25%;
+		}
+	}
+	@include res(s) {
+		left: -10px;
+		width: 30px;
+	}
+	&:hover {
+		&:after {
+			border-color: $link-hover;
+		}
+	}
+	&.slick-disabled {
+		pointer-events: none;
+		&:after {
+			opacity: 0.3;
+		}
+	}
+}

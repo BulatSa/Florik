@@ -190,6 +190,28 @@ Replace Src Image END
 
 
 /***********************
+Slick BEGIN
+***********************/
+$(document).ready(function(){
+	$('.cases__slider').slick({
+		dots: false,
+		//speed: 300,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		lazyLoad: 'progressive',
+		fade: true,
+		nextArrow: '<a href="#" class="cases__slide-next"></a>',
+		prevArrow: '<a href="#" class="cases__slide-prev"></a>'
+	});
+});
+/***********************
+Slick END
+***********************/
+
+
+/***********************
  fancybox BEGIN
  ***********************/
 function init_fancy() {

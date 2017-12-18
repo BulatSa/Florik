@@ -306,4 +306,205 @@
 </section>
 
 
+<section class="cases-sec def-sec">
+	<div class="cases container">
+		<div class="block-title">
+			<span>Кейсы</span>
+			<p class="h1">За меня говорят мои результаты </p>
+		</div>
+		<div class="cases__slider">
+			<div class="cases__slide-wrap">
+				<div class="cases__slide">
+					<div class="cases__slide-info">
+						<img src="img/clients/client-logo-1.png" class="cases__slide-logo" alt="">
+						<div class="user-content user-content--mini">
+							<h2>Более 80+ клиентов в месяц для фабрики сумок в Кирове</h2>
+							<p>Систематизация отдела продаж. . Полностью прозрачная система отдела продаж, скрипты продаж, регламенты. Для всей компании внедрение Trello + Scrum/Kanban, общая работа в G Suite (полгода). </p>
+						</div>
+						<div class="cases__slide-profit">
+							<div class="cases__slide-profit-before">
+								<span>Было</span>
+								<p>10-15 новых клиентов в месяц</p>
+							</div>
+							<div class="cases__slide-profit-after">
+								<span>Стало</span>
+								<p>60-80 новых клиентов в месяц</p>
+							</div>
+						</div>
+					</div>
+					<div class="cases__slide-img">
+						<img data-lazy="img/cases/slide-1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="cases__slide-wrap">
+				<div class="cases__slide">
+					<div class="cases__slide-info">
+						<img src="img/clients/client-logo-1.png" class="cases__slide-logo" alt="">
+						<div class="user-content user-content--mini">
+							<h2>Более 80+ клиентов в месяц для фабрики сумок в Кирове</h2>
+							<p>Систематизация отдела продаж. . Полностью прозрачная система отдела продаж, скрипты продаж, регламенты. Для всей компании внедрение Trello + Scrum/Kanban, общая работа в G Suite (полгода). </p>
+						</div>
+						<div class="cases__slide-profit">
+							<div class="cases__slide-profit-before">
+								<span>Было</span>
+								<p>10-15 новых клиентов в месяц</p>
+							</div>
+							<div class="cases__slide-profit-after">
+								<span>Стало</span>
+								<p>60-80 новых клиентов в месяц</p>
+							</div>
+						</div>
+					</div>
+					<div class="cases__slide-img">
+						<img data-lazy="img/cases/slide-1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="cases__slide-wrap">
+				<div class="cases__slide">
+					<div class="cases__slide-info">
+						<img src="img/clients/client-logo-1.png" class="cases__slide-logo" alt="">
+						<div class="user-content user-content--mini">
+							<h2>Более 80+ клиентов в месяц для фабрики сумок в Кирове</h2>
+							<p>Систематизация отдела продаж. . Полностью прозрачная система отдела продаж, скрипты продаж, регламенты. Для всей компании внедрение Trello + Scrum/Kanban, общая работа в G Suite (полгода). </p>
+						</div>
+						<div class="cases__slide-profit">
+							<div class="cases__slide-profit-before">
+								<span>Было</span>
+								<p>10-15 новых клиентов в месяц</p>
+							</div>
+							<div class="cases__slide-profit-after">
+								<span>Стало</span>
+								<p>60-80 новых клиентов в месяц</p>
+							</div>
+						</div>
+					</div>
+					<div class="cases__slide-img">
+						<img data-lazy="img/cases/slide-1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="prices-sec def-sec">
+	<div class="prices container">
+		<div class="block-title">
+			<span>Цены</span>
+			<p class="h1">Формат сотрудничества</p>
+		</div>
+		<div class="prices__list row">
+			<div class="grid-4 grid-12_m">
+				<div class="prices__item">
+					<div class="user-content user-content--mini">
+						<h3>Проектная работа</h3>
+						<p>На встрече мы обсуждаем цели и задачи вашего бизнеса. Определяем проблемы, которые нужно решить. Вместе обозначаем результат, к которому планируем прийти. После оговариваем сроки сотрудничества и приступаем к совместной работе.</p>
+						<p>Я составляю подробный план действий и согласовываю его с собственниками бизнеса и руководителями. После мы начинаем его внедрять. Я работаю с вами как приглашенный консультант, чтобы бизнес быстрее достиг поставленной цели.</p>
+					</div>
+					<div class="prices__item-more">
+						<div class="prices__item-more-text">
+							<p>Месячный консалтинг по скраму 5 часов в месяц по 6 000 руб.</p>
+							<span class="h3">30 000 руб/мес</span>
+						</div>
+						<div class="btn-center">
+							<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-4 grid-12_m">
+				<div class="prices__item">
+					<div class="user-content user-content--mini">
+						<h3>Консалтинг</h3>
+						<p>Я веду ваш проект месяц. Помогаю решить ваши задачи, даю рекомендации и проверенных подрядчиков. Выделяю на работу с вами 8 часов. Из них 4 часа - на звонки и обсуждения, 4 часа – на конкретную помощь. Иногда я помогаю клиентам составить маркет-план, проверить калькуляторы или аналитику. Если вы хотите, чтобы я отслеживал выполняемые работы, предоставьте доступ к «Гугл-календарю».</p>
+						<p>Вы можете пригласить всех от административного аппарата, продакт-менеджеров, стейк-холдеров. Также я работаю с маркетологами или руководителями отдела продаж.</p>
+					</div>
+					<div class="prices__item-more">
+						<div class="prices__item-more-text">
+							<p>Месячный консалтинг по скраму 8 часов в месяц по 6 000 руб.</p>
+							<span class="h3">48 000 руб/мес</span>
+						</div>
+						<div class="btn-center">
+							<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-4 grid-12_m">
+				<div class="prices__item prices__item--last">
+					<div class="user-content user-content--mini">
+						<h3>Тренинг/личная встреча </h3>
+						<p>Я работаю с группой людей в формате тренинга, воркшопа или мозгового штурма. Мероприятие провожу сам или приглашаю отдельных спикеров под разные темы: ecom, B2B, В2С, маркетинг, продажи или личную эффективность. Если у вас сложная ситуация в бизнесе, давайте обсудим ее вместе. Я подберу для вас подходящую тему тренинга и после организую его.</p>
+						<p>В формате личной встречи я работаю с владельцами бизнеса и руководителями. Преимущество личной встречи – возможность задать все интересующие вопросы по бизнесу и получить ответы. Я дам вам конкретные рекомендации, которые помогут решить сложную ситуацию в вашем бизнесе.</p>
+					</div>
+					<div class="prices__item-more">
+						<div class="prices__item-more-text">
+							<p>Месячный консалтинг по скраму 12 часов в месяц по 6 000 руб.</p>
+							<span class="h3">72 000 руб/мес</span>
+						</div>
+						<div class="btn-center">
+							<a href="#" class="btn btn--red fancy" data-src="#modal-order">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="video-block-sec def-sec">
+	<div class="video-block container">
+		<div class="video-block__info">
+			<div class="video-block__info-text">
+				<div class="block-title">
+					<span>Спикер</span>
+					<p class="h1">100 000 выступлений за&nbsp;11&nbsp;лет</p>
+					<div class="user-content">
+						<p>В месяц у меня более 3-х выступлений по всей России. Моя аудитория: маркетологи, руководители,  SMM-специалисты, предприниматели. Каждое мое выступления завершается огромным количеством положительных отзывов, которые вы можете прочитать ниже. </p>
+					</div>
+				</div>
+			</div>
+			<div class="video-block__info-facts">
+				<div class="video-block__info-fact">
+					<span>Найди свой трафик</span>
+					<img src="img/video-facts/fact-1.png" alt="">
+				</div>
+				<div class="video-block__info-fact">
+					<span>Суровый питерский СММ</span>
+					<img src="img/video-facts/fact-2.png" alt="">
+				</div>
+				<div class="video-block__info-fact">
+					<span>Kursk Marketing Forum</span>
+					<img src="img/video-facts/fact-3.png" alt="">
+				</div>
+				<div class="video-block__info-fact">
+					<span>Неделя рекламы на Вятке</span>
+					<img src="img/video-facts/fact-4.png" alt="">
+				</div>
+				<div class="video-block__info-fact">
+					<span>Like Business</span>
+					<img src="img/video-facts/fact-5.png" alt="">
+				</div><div class="video-block__info-fact">
+					<span>Fashion Factory School</span>
+					<img src="img/video-facts/fact-6.png" alt="">
+				</div>
+				<div class="video-block__info-fact">
+					<span>Фабрика Предпри&shy;нимателей</span>
+					<img src="img/video-facts/fact-7.png" alt="">
+				</div>
+				<div class="video-block__info-fact">
+					<span>iFresh</span>
+					<img src="img/video-facts/fact-8.png" alt="">
+				</div>
+			</div>
+			<a href="#" class="btn fancy" data-src="#modal-order">Пригласить меня спикером</a>
+		</div>
+	</div>
+</section>
+
+
 <?php include('footer.php'); ?>
