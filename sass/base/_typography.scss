@@ -26,10 +26,10 @@ h1, .h1 {
 		font-size: 38px;
 	}
 	@include res(s) {
-		font-size: 32px;
+		font-size: 30px;
 	}
 	@include res(xs) {
-		font-size: 24px;
+		font-size: 23px;
 	}
 }
 
@@ -79,6 +79,12 @@ h4, .h4 {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.1;
+	@include res(s) {
+		font-size: 18px;
+	}
+	@include res(xs) {
+		font-size: 16px;
+	}
 }
 
 .user-content {
@@ -97,6 +103,16 @@ h4, .h4 {
 	}
 	h1, h2, h3, h4 {
 		padding-bottom: 0.6em;
+	}
+	a {
+		color: $link-hover;
+		transition: all 0.3s ease;
+		&[target="_blank"] {
+			border-bottom: 1px solid transparent;
+			&:hover {
+				border-color: $link-hover;
+			}
+		}
 	}
 	&--mini {
 		font-size: 14px;

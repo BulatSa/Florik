@@ -1,9 +1,24 @@
 .modal{
 	display: none;
-	width: 500px;
+	width: 460px;
 	max-width: 100%;
+	padding: $pad-s $pad-m $pad-m;
 	will-change: transform,opacity;
 	overflow: visible !important;
+	box-shadow: 0 12px 35px 0 transparentize(#000,0.8);
+	@include res(s) {
+		padding: $pad-s $pad-s $pad-s;
+	}
+	@include res(xs) {
+		padding: $pad-s $pad-xs $pad-s;
+	}
+	.btn-center {
+		padding-top: $pad-xxs;
+	}
+
+	&--review {
+		width: 880px;
+	}
 }
 
 .fancybox-slide--current {
@@ -19,11 +34,35 @@
 }
 
 .fancybox-bg{
-	background: #8c8e9a;
+	background: #000;
 }
 
 .fancybox-close-corner{
-	@include cross();
+	position: absolute;
+	top: -25px;
+	right: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #b1b1b1;
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	span {
+		display: inline-block;
+		line-height: 1.5;
+	}
+	&:after {
+		content: '×';
+		position: relative;
+		display: inline-block;
+		top: 2px;
+		margin-left: 2px;
+		font-size: 18px;
+	}
+	&:hover {
+		color: $link-hover;
+	}
 }
 
 .fancybox-slide--iframe .fancybox-content{

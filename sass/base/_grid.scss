@@ -119,8 +119,17 @@
 		padding-top: $pad-s;
 		padding-bottom: $pad-s;
 	}
-	@include res(xs) {
-		//padding-top: $pad-xs;
-		//padding-bottom: $pad-xs;
+}
+
+.def-sec-bottom {
+	padding-bottom: $pad-l;
+	@include res(xl) {
+		padding-bottom: 50px;
+	}
+	@include res(l) {
+		padding-bottom: $pad-m;
+	}
+	@include res(s) {
+		padding-bottom: $pad-s;
 	}
 }

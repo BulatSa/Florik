@@ -84,7 +84,7 @@ Input mask END
 /***********************
 GreenSock BEGIN
 ***********************/
-$(document).ready(function() {
+/*$(document).ready(function() {
 	if($(window).width() > 1030) {
 		var $headerLogo = $('.header-nav__logo');
 		var $headerLinks = $('.header-nav__links a');
@@ -103,7 +103,7 @@ $(document).ready(function() {
 			.fromTo($headerBtn, 0.5, {y: 30, opacity:0}, {y: 0, opacity: 1});
 	}
 
-});
+});*/
 /***********************
 GreenSock END
 ***********************/
@@ -222,18 +222,7 @@ function init_fancy() {
 		animationDuration : 300,
 		transitionEffect : "slide",
 		btnTpl : {
-			smallBtn   : '<button data-fancybox-close class="fancybox-close-corner" title="Закрыть"></button>'
-		}
-	});
-	$('.fancy-map').fancybox({
-		toolbar: false,
-		smallBtn : true,
-		backFocus : false,
-		animationEffect: "zoom-in-out",
-		animationDuration : 300,
-		transitionEffect : "slide",
-		btnTpl : {
-			smallBtn   : '<button data-fancybox-close class="fancybox-close-corner" title="Закрыть"></button>'
+			smallBtn: '<button data-fancybox-close class="fancybox-close-corner" title="Закрыть"><span>Закрыть</span></button>'
 		}
 	});
 }
@@ -287,12 +276,39 @@ $(function(){
 
 
 /***********************
+Masonry BEGIN
+***********************/
+$(document).ready(function() {
+	var $itemList = $('.reviews__list');
+	function reviewsMasonry($itemList) {
+		$itemList.masonry({
+			// options...
+			percentPosition: true
+		});
+	}
+
+	if($(window).width() > 770) {
+		reviewsMasonry($itemList);
+	}
+
+	$(window).resize(function () {
+		if($(window).width() > 770) {
+			reviewsMasonry($itemList);
+		}
+	});
+});
+/***********************
+Masonry END
+***********************/
+
+
+/***********************
  Прокрутка к секциям BEGIN
  ***********************/
 $(function($){
 	$('.scrollto').click(function () {
 		var elementClick = $(this).attr("href");
-		var destination = $(elementClick).offset().top;
+		var destination = $(elementClick).offset().top - 30;
 		$('html,body').stop().animate({scrollTop:destination}, 1000);
 		return false;
 	});
@@ -311,7 +327,44 @@ $(function($){
 	}, {
 		offset: '85%'
 	});
+
+	$('.clients-sec').waypoint(function () {
+		$('.header-nav-sec').toggleClass('active');
+	}, {
+		offset: '85%'
+	});
 });
 /***********************
 Waypoints END
 ***********************/
+
+
+/***********************
+ Link anchors BEGIN
+ ***********************/
+$(document).ready(function(){
+
+	$('.header-nav__links a').each(function () {
+		var target = $(this).attr('href');
+		$(target).addClass('__nav-section');
+	});
+
+	$(window).scroll(function() {
+		var w_scroll = $(window).scrollTop();
+		var w_height = $(window).height();
+		$('.header-nav__links a').removeClass('active');
+		$('.__nav-section').each(function() {
+			var section_top = $(this).offset().top;
+			var section_h = $(this).outerHeight();
+
+			if ((w_scroll >= section_top-w_height/2) && (w_scroll < section_top + section_h-80)){
+				var section_index = $(this).index('.__nav-section');
+				$('.header-nav__links a').eq(section_index).addClass('active');
+			}
+		});
+	});
+
+});
+/***********************
+ Link anchors END
+ ***********************/

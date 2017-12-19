@@ -12,7 +12,7 @@
 	<![endif]-->
 
 
-	<title>Флоринский</title>
+	<title>Никита Флоринский</title>
 
 	<!-- favocons -->
 	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">
@@ -26,13 +26,13 @@
 	<!-- favocons -->
 
 	<!-- og -->
-	<meta property="og:title" content="Шаблон проекта">
-	<meta property="og:description" content="Описание проекта">
+	<meta property="og:title" content="Никита Флоринский">
+	<meta property="og:description" content="Никита Флоринский">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="/img/og.jpg">
 	<!-- og -->
 
-	<link href="css/main.css" rel="stylesheet">
+	<link href="css/main.css?202017" rel="stylesheet">
 </head>
 
 <body>

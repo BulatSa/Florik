@@ -1,0 +1,86 @@
+.learning-sec {}
+
+.learning {}
+
+.learning__list {}
+
+.learning__item {
+	@include res(s) {
+		margin-bottom: $pad-s;
+	}
+	&--last {
+		margin-bottom: 0;
+	}
+}
+
+.learning__item-title {
+	padding-bottom: 0.6em;
+}
+
+.learning__item-book {
+	@include res(m) {
+		max-width: 150px;
+	}
+}
+
+.learning__item-link {
+	padding-bottom: $pad-m;
+	@include res(l) {
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+	&:last-child {
+		padding-bottom: 0;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+	&.user-content {
+		max-width: 350px;
+		@include res(s) {
+			max-width: 100%;
+		}
+	}
+}
+
+.learning__item-video {
+	position: relative;
+	display: inline-block;
+	margin-bottom: $pad-xs;
+	@include res(l) {
+		margin-bottom: $pad-xxs;
+	}
+	&:hover {
+		.video-play {
+			transform: translate3d(-50%,-50%,0) scale(1.1);
+		}
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: transparentize(#000,0.5);
+		z-index: 0;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+	.video-play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%,-50%,0) scale(1);
+		z-index: 1;
+		@include res(m) {
+			transform: translate3d(-50%,-50%,0) scale(0.8);
+		}
+	}
+}

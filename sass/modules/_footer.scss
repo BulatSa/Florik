@@ -1,0 +1,56 @@
+.footer-sec {
+	background: #181c28;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+	@include res(s) {
+		flex-wrap: wrap;
+	}
+}
+
+.footer__copy {
+	color: #fff;
+	@include res(s) {
+		width: 50%;
+		padding-right: $pad-xs;
+	}
+}
+
+.footer__politic {
+	padding-right: $pad-xs;
+	padding-left: $pad-xs;
+	color: $link-hover;
+	@include res(s) {
+		width: 50%;
+		padding-right: 0;
+	}
+	a {
+		border-bottom: 1px solid transparent;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: $link-hover;
+		}
+	}
+}
+
+.footer__develop {
+	color: #fff;
+	@include res(s) {
+		width: 100%;
+		padding-top: $pad-xs;
+	}
+	&:hover {
+		span {
+			border-color: $link-hover;
+		}
+	}
+	span {
+		color: $link-hover;
+		border-bottom: 1px solid transparent;
+		transition: all 0.3s ease;
+	}
+}
